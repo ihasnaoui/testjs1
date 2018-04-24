@@ -22,6 +22,6 @@ app.use(express.static(path.join(__dirname, "public")));
 // All endpoints to be used in this application
 var routes = require("./routes/routes.js")(app);
 
-var server = app.listen(process.env.COUCHBASE_PORT || 3000, function () {
+var server = app.listen(process.env.COUCHBASE_PORT || 8081, function () {
     console.log("Listening on port %s...", server.address().port);
 });
